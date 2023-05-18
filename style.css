@@ -1,0 +1,1142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110vh;
+    
+}
+
+nav{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    padding: 1em 15em;
+    background-color: rgb(244, 244, 244);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link{
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    font-size: 2em;
+}
+
+.nav_a:hover{
+    border-bottom: 2px solid darkorange;
+}
+.nav_a:active{
+    border-bottom: 2px solid darkorange;
+}
+
+.btn{
+    width: 6em;
+    height: 3em;
+    display: flex;
+    background-color: rgb(255, 230, 0);
+    border-color:transparent ;
+    color: #151111;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    z-index: 60;
+    border-radius: 55px;
+}
+
+.btnh:hover{
+    background-image: linear-gradient(44deg, rgba(138, 142, 12, 0.315),rgba(195, 195, 15, 0.37), rgba(230, 230, 18, 0.43)) ;
+    border: 3px solid rgb(255, 255, 255);
+}
+.btna:active{
+    background-image: linear-gradient(44deg, rgba(136, 116, 6, 0.483),rgba(199, 174, 10, 0.514), rgba(213, 207, 12, 0.514)) ;
+    border: 3px solid rgb(255, 200, 0);
+}
+
+.logo{
+    font-size: 1.8em;
+}
+
+.header_cont{
+    display: flex;
+    width: 100%;
+    height: 110vh;
+    background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4em 25em;
+}
+
+.header_title{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    gap: 2em;
+}
+
+.btn_h_c{
+    width: 11em;
+    height: 2.5em;
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(255, 230, 0);
+    border-color:transparent ;
+    color: #151111;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    z-index: 60;
+    border-radius: 55px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+}
+
+.We_work{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    font-size: 2em;
+    padding: 8em 8em;
+    gap: 1em;
+}
+
+.we_work_cont_logo{
+    padding: 0em 20em 0em 0em;
+}
+
+.we_work_cont{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    font-size: 1.3em;
+    gap: 3em;
+}
+
+.we_work_title{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+}
+
+.we_work_cont_sec{
+    display: flex;
+    gap: 2em;
+}
+.btn_we{
+    width: 10em;
+    height: 2em;
+    display: flex;
+    background-color: rgb(255, 230, 0);
+    border-color:transparent ;
+    color: #151111;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    z-index: 60;
+    border-radius: 55px;
+}
+
+.Design{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    padding: 0em 15em;
+    background-color: blanchedalmond;
+}
+
+.Design_cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    font-size: 3em;
+    padding: 3em 4em;
+    gap: 2em;
+}
+
+.Design_img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/about1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.Franclin{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    padding: 8em 5em;
+    gap: 7em;
+}
+.Franclin_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    gap: 1em;
+    padding: 1em 8em;
+}
+.Franclin_inco{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+.inco:not(:first-child){
+    margin-left: 5em;
+}
+.inco{
+    width: 400px ;
+    height: 300px;
+    background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.Personalized{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    background-color: blanchedalmond;
+}
+.Personalized_img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/visit_bg.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Personalized_cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    font-size: 3em;
+    padding: 3em 4em;
+    gap: 2em;
+}
+.Personalized_sec{
+    display: flex;
+    gap: 5em;
+    font-size: 0.8em;
+}
+
+.Interior{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    font-size: 3em;
+    padding: 4em 2em;
+    gap: 4em;
+}
+.Interior_cont{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    font-size: 1em;
+    gap: 3em;
+}
+.Interior_title{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    height: 100%;
+}
+.Interior_title > i{
+    font-size: 3.5em;
+}
+
+footer{
+    width: 100%;
+    height: max-content;
+    background-color: rgb(197, 197, 211);
+    margin: 0 auto;
+}
+.footer_content{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    padding: 8em 5em;
+    gap: 2em;
+    font-size: 2em;
+}
+.footer_tytle{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: max-content;
+    gap: 1em;
+}
+.input{
+    height: 4em;
+    width: 100%;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 2100px){
+    nav{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        padding: 1em 5em;
+        background-color: rgb(244, 244, 244);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav_link{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 2em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3em;
+        gap: 2em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 2em;
+        padding: 5em 5em;
+        gap: 1em;
+    }
+    .Design{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        padding: 0em 6em;
+        background-color: blanchedalmond;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 3em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Franclin{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        padding: 6em 3em;
+        gap: 5em;
+    }
+    .Franclin_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2.6em;
+        gap: 1em;
+        padding: 1em 8em;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 3em;
+        padding: 3em 4em;
+        gap: 2em;
+    }
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 2.5em;
+        padding: 4em 2em;
+        gap: 4em;
+    }
+    .footer_content{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        padding: 8em 5em;
+        gap: 2em;
+        font-size: 2em;
+    }
+    .input{
+        height: 3em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1850px){
+    .nav_link{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1.8em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2.5em;
+        gap: 2em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1.7em;
+        padding: 5em 2em;
+        gap: 1em;
+    }
+    .Design{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        padding: 0em 4em;
+        background-color: blanchedalmond;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2.5em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Franclin{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        padding: 4em 3em;
+        gap: 5em;
+    }
+    .Franclin_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2.2em;
+        gap: 1em;
+        padding: 1em 4em;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2.5em;
+        padding: 3em 2em;
+        gap: 2em;
+    }
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 2em;
+        padding: 4em 1em;
+        gap: 4em;
+    }
+    .footer_content{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        padding: 8em 5em;
+        gap: 2em;
+        font-size: 1.6em;
+    }
+    .input{
+        height: 3em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1690px){
+    .nav_link{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1.3em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2em;
+        gap: 2em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1.5em;
+        padding: 5em 2em;
+        gap: 1em;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2.2em;
+        padding: 3em 2em;
+        gap: 2em;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2.2em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1.7em;
+        padding: 4em 1em;
+        gap: 4em;
+    }
+}
+@media screen and (max-width: 1410px){
+    .header_cont{
+        display: flex;
+        width: 100%;
+        height: 110vh;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 4em 18em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1.3em;
+        padding: 5em 2em;
+        gap: 1em;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Franclin{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        padding: 3em 3em;
+        gap: 3em;
+    }
+    .Franclin_inco{
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+    }
+    .inco:not(:first-child){
+        margin-left: 3em;
+    }
+    .inco{
+        width: 500px ;
+        height: 400px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2em;
+        padding: 3em 2em;
+        gap: 2em;
+    } 
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1.4em;
+        padding: 4em 1em;
+        gap: 4em;
+    }
+
+    .footer_content{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        padding: 8em 5em;
+        gap: 2em;
+        font-size: 1.2em;
+    }
+    .input{
+        height: 3em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 1200px){
+    nav{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        padding: 1em 1em;
+        background-color: rgb(244, 244, 244);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav_link{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1.2em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.6em;
+        gap: 2em;
+    }
+    .logo{
+        font-size: 1.5em;
+    }
+    .header_cont{
+        display: flex;
+        width: 100%;
+        height: 110vh;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 4em 12em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1em;
+        padding: 5em 3em;
+        gap: 1em;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1.5em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Franclin{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        padding: 1em 1em;
+        gap: 2em;
+    }
+    .Franclin_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5em;
+        gap: 1em;
+        padding: 1em 8em;
+    }
+    .Franclin_inco{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+    .inco:not(:first-child){
+        margin-left: 3em;
+    }
+    .inco{
+        width: 100% ;
+        height: 200px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1.5em;
+        padding: 3em 2em;
+        gap: 2em;
+    } 
+}
+
+@media screen and (max-width: 1025px){
+    .nav_link{
+        display: none;
+    }
+    .nav_link_media{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1em;
+    }
+    .header_cont{
+        display: flex;
+        width: 100%;
+        height: 110vh;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 4em 6em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.4em;
+        gap: 2em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 0.8em;
+        padding: 5em 3em;
+        gap: 1em;
+    }
+    .we_work_cont_sec{
+        display: flex;
+        gap: 2em;
+        padding: 0em 30em 0em 0em;
+    }
+    .we_work_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1.3em;
+        gap: 3em;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1.2em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Design{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        padding: 0em 5em;
+        background-color: blanchedalmond;
+    }
+    .Design_img{
+        display: flex;
+        width:100%;
+        height: 700px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/about1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Franclin_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1em;
+        gap: 1em;
+        padding: 1em 8em;
+    }
+    .inco{
+        width: 100% ;
+        height: 100px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Personalized{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: max-content;
+        background-color: blanchedalmond;
+    }
+    .Personalized_img{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/visit_bg.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1.5em;
+        padding: 3em 6em;
+        gap: 2em;
+    } 
+    .Interior_cont{
+        display: flex;
+        flex-direction: column;
+        padding: 0em 10em 0em 0em;
+    }
+    .footer_content{
+        display: flex;
+        flex-direction: column ;
+        width: 100%;
+        height: max-content;
+        padding: 8em 5em;
+        gap: 2em;
+        font-size: 1.2em;
+    }
+    .input{
+        height: 3em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 650px){
+    nav{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        padding: 1em 1em;
+        background-color: rgb(244, 244, 244);
+        justify-content: end;
+        align-items: center;
+    }
+    .logo{
+        display: none;
+    }
+    .btn{
+        width: 6em;
+        height: 3em;
+        display: flex;
+        background-color: rgb(255, 230, 0);
+        border-color:transparent ;
+        color: #151111;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        z-index: 60;
+        border-radius: 55px;
+    }
+    .nav_link_media{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1em;
+    }
+    .header_cont{
+        display: flex;
+        width: 100%;
+        height: 110vh;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 0em 5em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1em;
+        gap: 2em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 0.5em;
+        padding: 5em 3em;
+        gap: 1em;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Design_img{
+        display: flex;
+        width:100%;
+        height: 500px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/about1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Franclin_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.8em;
+        gap: 1em;
+        padding: 1em 5em;
+    }
+    .inco{
+        width: 100% ;
+        height:20px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Personalized_img{
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/visit_bg.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1em;
+        padding: 3em 6em;
+        gap: 2em;
+    } 
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1em;
+        padding: 4em 1em;
+        gap: 4em;
+    }
+    .Interior_cont{
+        display: flex;
+        flex-direction: column;
+        padding: 0em 7em 0em 0em;
+        font-size: 0.5em;
+    }
+    .footer_content{
+        display: flex;
+        flex-direction: column ;
+        width: 100%;
+        height: max-content;
+        padding: 4em 5em;
+        gap: 2em;
+        font-size: 1em;
+    }
+    .input{
+        height: 3em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 350px){
+    .nav_link_media{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 0.6em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.5em;
+        gap: 2em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 0.3em;
+        padding: 5em 3em;
+        gap: 1em;
+    }
+    .Design{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        padding: 0em 3em;
+        background-color: blanchedalmond;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 0.5em;
+        padding: 2em 2em;
+        gap: 2em;
+    }
+    .Design_img{
+        display: flex;
+        width:100%;
+        height: 200px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/about1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Franclin_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.4em;
+        gap: 1em;
+        padding: 1em 4em;
+    }
+    .Personalized_img{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/visit_bg.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 0.7em;
+        padding: 3em 3em;
+        gap: 2em;
+    } 
+    .footer_content{
+        display: flex;
+        flex-direction: column ;
+        width: 100%;
+        height: max-content;
+        padding: 4em 2em;
+        gap: 2em;
+        font-size: 0.5em;
+    }
+}
