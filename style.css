@@ -15,609 +15,1147 @@ body{
 }
 
 header{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
-    background: url(https://preview.colorlib.com/theme/vineyard/images/bg_1.jpg.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 2em;
+    height: 110vh;
+    
 }
 
 nav{
-    display: grid;
     width: 100%;
     height: max-content;
-    grid-template-columns: repeat(2, 2fr );
+    display: flex;
+    flex-direction: row;
+    padding: 1em 15em;
+    background-color: rgb(244, 244, 244);
+    justify-content: space-between;
     align-items: center;
-    padding: 1em 3em;
-    position: fixed;
 }
 
-.links{
-    display: block;
-    text-transform: uppercase;
-    word-spacing: 10px;
+.nav_link{
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    font-size: 2em;
+}
+
+.nav_a:hover{
+    border-bottom: 2px solid darkorange;
+}
+.nav_a:active{
+    border-bottom: 2px solid darkorange;
+}
+
+.btn{
+    width: 6em;
+    height: 3em;
+    display: flex;
+    background-color: rgb(255, 230, 0);
+    border-color:transparent ;
+    color: #151111;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    z-index: 60;
+    border-radius: 55px;
+}
+
+.btnh:hover{
+    background-image: linear-gradient(44deg, rgba(138, 142, 12, 0.315),rgba(195, 195, 15, 0.37), rgba(230, 230, 18, 0.43)) ;
+    border: 3px solid rgb(255, 255, 255);
+}
+.btna:active{
+    background-image: linear-gradient(44deg, rgba(136, 116, 6, 0.483),rgba(199, 174, 10, 0.514), rgba(213, 207, 12, 0.514)) ;
+    border: 3px solid rgb(255, 200, 0);
+}
+
+.logo{
+    font-size: 1.8em;
 }
 
 .header_cont{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    justify-content: end;
-    padding: 17em 16em 0em 30em;
-    font-size: 1.2em;
-    color: cornflowerblue;
-}
-.played{
     display: flex;
-    align-items: center;
-    gap: 1em;
-}
-.play{
-    width: 5em;
-    height: 5em;
-    border-radius: 100%;
-    background-color: black;;
-}
-.plays{
-    width: 5em;
-    height: 5em;
-    border-radius: 100%;
-    background-color: black;;
-}
-main{
     width: 100%;
-    height: auto;
-}
-.daily{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    height: max-content;
-    margin: 0 auto;
-    padding: 0em 6em;
-}
-.img_daily{
-    width: 100%;
-    height: 100%;
-    background: url(https://preview.colorlib.com/theme/vineyard/images/about.jpg.webp);
+    height: 110vh;
+    background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    background-position: center;
+    padding: 4em 25em;
 }
-.btn_daily{
-    display: grid;
+
+.header_title{
+    display: flex;
     width: 100%;
     height: 100%;
-    grid-template-rows: repeat(6, 5fr);  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    gap: 2em;
 }
-.btn{
+
+.btn_h_c{
+    width: 11em;
+    height: 2.5em;
     display: flex;
-    background-color: rgba(230, 221, 234, 0.555);
-    padding: 1em 2em;
+    flex-direction:column;
+    background-color: rgb(255, 230, 0);
     border-color:transparent ;
     color: #151111;
-}
-.btn:hover{
-    background-image: linear-gradient(44deg, rgba(193, 42, 207, 0.315),rgba(179, 39, 197, 0.37), rgba(110, 13, 123, 0.43)) ;
-    border: 3px solid cornflowerblue;
-}
-.btn:active{
-    background-image: linear-gradient(44deg, rgba(148, 12, 161, 0.483),rgba(67, 8, 127, 0.514), rgba(27, 9, 185, 0.514)) ;
-    border: 3px solid cornflowerblue;
-}
-.btn_title{
-    display: block;
-    text-align: end;
-    padding: 1em ;
-}
-.we_are{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    height: max-content;
-    margin: 0 auto;
-    padding: 0em 6em;
-}
-.img_WE_ARE{
-    width: 100%;
-    height: 100%;
-    background: url(https://preview.colorlib.com/theme/vineyard/images/about-2.jpg.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.we_are_cont{
-    width: 100%;
-    height: 100%;
-    font-size:1.6em;
-    padding: 2em 0em;
-}
-.we_are_stat{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 3em;
-    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    z-index: 60;
+    border-radius: 55px;
 }
 
-.table_cont{
-    display: block;
-    text-align: center;
-    padding: 2em;
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+}
+
+.We_work{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    font-size: 2em;
+    padding: 8em 8em;
+    gap: 1em;
+}
+
+.we_work_cont_logo{
+    padding: 0em 20em 0em 0em;
+}
+
+.we_work_cont{
+    display: flex;
+    width: 100%;
+    height: max-content;
     font-size: 1.3em;
+    gap: 3em;
 }
 
-.lord_WE_ARE{
-    width: 100%;
-    height: 100%;
-    background: url(https://lh3.googleusercontent.com/erqdhcH0ZXBpLpxs8Bd20joKUo5iLEZcCoN-VEETEKFME-IlY83l4vyVdV-N-fyHw928ThRGSJIu1yzj9Pw_rey4cStDgC9i_R-bMrHJfg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 10em 10em;
-}
-.lord_are_cont{
-    font-size:1.4em;
-    padding: 2em;
+.we_work_title{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
 }
 
-.INSPIRATIONAL{
-    display:grid;
-    grid-template-rows: repeat(3, 1fr);
+.we_work_cont_sec{
+    display: flex;
+    gap: 2em;
+}
+.btn_we{
+    width: 10em;
+    height: 2em;
+    display: flex;
+    background-color: rgb(255, 230, 0);
+    border-color:transparent ;
+    color: #151111;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    z-index: 60;
+    border-radius: 55px;
+}
+
+.Design{
+    display: flex;
     width: 100%;
     height: max-content;
-    margin: 0 auto;
-    padding: 2em 0em;
+    padding: 0em 15em;
+    background-color: blanchedalmond;
 }
-.inst{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    width:100%;
-    height: 400px;
+
+.Design_cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    font-size: 3em;
+    padding: 3em 4em;
+    gap: 2em;
 }
-.inst_img{
+
+.Design_img{
+    display: flex;
     width: 100%;
     height: 100%;
-    background: url(https://lh3.googleusercontent.com/erqdhcH0ZXBpLpxs8Bd20joKUo5iLEZcCoN-VEETEKFME-IlY83l4vyVdV-N-fyHw928ThRGSJIu1yzj9Pw_rey4cStDgC9i_R-bMrHJfg);
+    background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/about1.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    background-position: center;
 }
-.inst_media{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    width:100%;
-    height: 400px;
+
+
+
+.Franclin{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    padding: 8em 5em;
+    gap: 7em;
 }
-.INSPIRATIONAL_TESTIMONY{
+.Franclin_cont{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0em 5em 10em 5em;
-    font-size: 1.8em;
-    gap: 2em;
-    margin-top: -5em;
+    font-size: 3em;
+    gap: 1em;
+    padding: 1em 8em;
+}
+.Franclin_inco{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+.inco:not(:first-child){
+    margin-left: 5em;
+}
+.inco{
+    width: 400px ;
+    height: 300px;
+    background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-.play_INSPIRATIONAL{
-    width: 5em;
-    height: 5em;
-    border-radius: 100%;
-    background-color: black;
-    margin:0 auto;
+.Personalized{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    background-color: blanchedalmond;
 }
-
-.How_To_Recover{
+.Personalized_img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/visit_bg.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Personalized_cont{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 100%;
     height: max-content;
-    background-color: rgb(253, 253, 253); 
-    margin-left: 4em;
-    margin-top: 18em;
-    gap:1em ;
-    padding: 1em;
-    position: absolute;
+    font-size: 3em;
+    padding: 3em 4em;
+    gap: 2em;
 }
+.Personalized_sec{
+    display: flex;
+    gap: 5em;
+    font-size: 0.8em;
+}
+
+.Interior{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    font-size: 3em;
+    padding: 4em 2em;
+    gap: 4em;
+}
+.Interior_cont{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    font-size: 1em;
+    gap: 3em;
+}
+.Interior_title{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    height: 100%;
+}
+.Interior_title > i{
+    font-size: 3.5em;
+}
+
 footer{
     width: 100%;
     height: max-content;
-    background-color: #1a1c1df9;
+    background-color: rgb(197, 197, 211);
     margin: 0 auto;
 }
 .footer_content{
     display: flex;
-    justify-content: flex-start;
     width: 100%;
     height: max-content;
-    padding: 10rem 9rem;
-    gap: 1rem;
-    margin: 0 auto;
-}
-.footer_tytle >p{
-    margin-top: 0.5rem;
-}
-.footer_tytle >a{
-    margin-top: 0.5rem;
+    padding: 8em 5em;
+    gap: 2em;
+    font-size: 2em;
 }
 .footer_tytle{
     display: flex;
     flex-direction: column;
-    font-style: oblique;
     color: rgb(255, 255, 255);
-    margin: 0 auto;
-    width: 20rem ;
+    width: 100%;
+    height: max-content;
+    gap: 1em;
 }
 .input{
-    margin-top: 1rem;
-    height: 2rem;
+    height: 4em;
+    width: 100%;
+    font-size: 1em;
 }
 
-.hidden_btn{
-    display: none;
-    background-color: rgba(230, 221, 234, 0.555);
-    padding: 1em 2em;
-    border-color:transparent ;
-    color: #151111;
-}
-.close{
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    font-size: 2rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.modal{
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    background-color: #fff;
-    padding: 3rem;
-    border-radius: 10px;
-    z-index: 10;
-}
-
-.hidden{
-    display: none;
-}
-.overlay{
-    position: absolute;
-    top: 0;
-    width: 99.9%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
-    z-index: 5;
-}
-
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 2100px){
     nav{
-        display: grid;
         width: 100%;
         height: max-content;
-        grid-template-columns: repeat(2, 3fr );
+        display: flex;
+        flex-direction: row;
+        padding: 1em 5em;
+        background-color: rgb(244, 244, 244);
+        justify-content: space-between;
         align-items: center;
-        padding: 1em 2em;
-        position: fixed;
     }
-    .links{
-        text-transform: uppercase;
-        word-spacing: 5px;
+    .nav_link{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 2em;
     }
-    .header_cont{
-        display: grid;
+    .header_title{
+        display: flex;
         width: 100%;
         height: 100%;
-        justify-content: end;
-        padding: 15em 5em 0em 15em;
-        font-size: 1.2em;
-        color: cornflowerblue;
-    }
-    .links{
-        text-transform: uppercase;
-        word-spacing: 5px;
-    }
-    .btn{
-        display: flex;
-        background-color: rgba(230, 221, 234, 0.555);
-        padding: 3em 1em;
-        border-color:transparent ;
-        color: #151111;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3em;
         gap: 2em;
     }
-    .btn_title{
-        display: block;
-        text-align: end;
-    }
-    .plays{
-        width: 7em;
-        height: 5em;
-        border-radius: 100%;
-        background-color: black;;
-    }
-    .img_WE_ARE{
+    .We_work{
+        display: flex;
         width: 100%;
-        height: 100%;
-        background: url(https://preview.colorlib.com/theme/vineyard/images/about-2.jpg.webp);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        height: max-content;
+        flex-direction: column;
+        font-size: 2em;
+        padding: 5em 5em;
+        gap: 1em;
     }
-    .we_are_cont{
+    .Design{
+        display: flex;
         width: 100%;
-        height: 100%;
-        font-size:1.3em;
+        height: max-content;
+        padding: 0em 6em;
+        background-color: blanchedalmond;
     }
-    .How_To_Recover{
+    .Design_cont{
         display: flex;
         flex-direction: column;
-        width: 20%;
+        width: 100%;
         height: max-content;
-        background-color: rgb(253, 253, 253); 
-        margin-left: 3em;
-        margin-top: 18em;
-        gap:1em ;
-        padding: 1em;
-        position: absolute;
+        font-size: 3em;
+        padding: 2em 3em;
+        gap: 2em;
     }
-    .footer_content{
+    .Franclin{
         display: flex;
-        justify-content: flex-start;
         width: 100%;
         height: max-content;
-        padding: 8rem 7rem;
-        gap: 1rem;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 1030px){
-    nav{
-        display: grid;
-        width: 100%;
-        height: max-content;
-        grid-template-columns: repeat(2, 2fr);
-        align-items: center;
-        padding: 0em 0em;
-        position: fixed;
-        font-size: 0.8em;
-    }
-    .links{
-        text-transform: uppercase;
-        word-spacing: 0px;
-    }
-    .header_cont{
-        display: grid;
-        width: 100%;
-        height: 100%;
-        justify-content: end;
-        padding: 18em 0em 10em 25em;
-        font-size: 1em;
-        color: cornflowerblue;
-    }
-    .daily{
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-        height: max-content;
-        margin: 0 auto;
-        padding: 0em 6em;
-    }
-    .img_daily{
-        width: 100%;
-        height: 600px;
-        background: url(https://preview.colorlib.com/theme/vineyard/images/about.jpg.webp);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .we_are{
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-        height: max-content;
-        margin: 0 auto;
-        padding: 0em 6em;
-    }
-    .img_WE_ARE{
-        width: 100%;
-        height: 600px;
-        background: url(https://preview.colorlib.com/theme/vineyard/images/about-2.jpg.webp);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .plays{
-        width: 5em;
-        height: 5em;
-        border-radius: 100%;
-        background-color: black;;
-    }
-    .How_To_Recover{
-        display: flex;
         flex-direction: column;
-        width: 20%;
-        height: max-content;
-        background-color: rgb(253, 253, 253); 
-        margin-left: 2em;
-        margin-top: 18em;
-        gap:1em ;
-        padding: 1em;
-        position: absolute;
+        padding: 6em 3em;
+        gap: 5em;
     }
-}
-@media screen and (max-width: 830px){
-    .header_cont{
-        display: grid;
-        width: 100%;
-        height: 100%;
-        justify-content: end;
-        padding: 20em 0em 10em 10em;
-        font-size: 1em;
-        color: cornflowerblue;
-    }
-    .daily{
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-        height: max-content;
-        margin: 0 auto;
-        padding: 0em 2em;
-    }
-    .plays{
-        width: 6em;
-        height: 5em;
-        border-radius: 100%;
-        background-color: black;;
-    }
-    .we_are{
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-        height: max-content;
-        margin: 0 auto;
-        padding: 0em 2em;
-    }
-    .inst{
-        display:grid;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(1, 1fr);
-        width:100%;
-        height: 1400px;
-    }
-    .inst_media{
-        display:grid;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(1, 1fr);
-        width:100%;
-        height: 2000px;
-        gap: 20em ;
-        margin-top: -30em;
-    }
-    .INSPIRATIONAL_TESTIMONY{
+    .Franclin_cont{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         text-align: center;
-        padding: 0em 5em 0em 5em;
-        font-size: 1.4em;
-        gap: 2em;
-        margin-top: -20em;
+        font-size: 2.6em;
+        gap: 1em;
+        padding: 1em 8em;
     }
-    .How_To_Recover{
+    .Personalized_cont{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         height: max-content;
-        background-color: rgb(253, 253, 253); 
-        margin-left: 6em;
-        margin-top: 14em;
-        gap:1em ;
-        padding: 1em;
-        position: absolute;
+        font-size: 3em;
+        padding: 3em 4em;
+        gap: 2em;
+    }
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 2.5em;
+        padding: 4em 2em;
+        gap: 4em;
     }
     .footer_content{
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
         width: 100%;
         height: max-content;
-        padding: 10rem 9rem;
-        gap: 3rem;
-        margin: 0 auto;
-        margin-top: 20em;
+        padding: 8em 5em;
+        gap: 2em;
+        font-size: 2em;
     }
-    .links{
+    .input{
+        height: 3em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1850px){
+    .nav_link{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1.8em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2.5em;
+        gap: 2em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1.7em;
+        padding: 5em 2em;
+        gap: 1em;
+    }
+    .Design{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        padding: 0em 4em;
+        background-color: blanchedalmond;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2.5em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Franclin{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        padding: 4em 3em;
+        gap: 5em;
+    }
+    .Franclin_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2.2em;
+        gap: 1em;
+        padding: 1em 4em;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2.5em;
+        padding: 3em 2em;
+        gap: 2em;
+    }
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 2em;
+        padding: 4em 1em;
+        gap: 4em;
+    }
+    .footer_content{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        padding: 8em 5em;
+        gap: 2em;
+        font-size: 1.6em;
+    }
+    .input{
+        height: 3em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1690px){
+    .nav_link{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1.3em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2em;
+        gap: 2em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1.5em;
+        padding: 5em 2em;
+        gap: 1em;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2.2em;
+        padding: 3em 2em;
+        gap: 2em;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2.2em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1.7em;
+        padding: 4em 1em;
+        gap: 4em;
+    }
+}
+@media screen and (max-width: 1410px){
+    .header_cont{
+        display: flex;
+        width: 100%;
+        height: 110vh;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 4em 18em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1.3em;
+        padding: 5em 2em;
+        gap: 1em;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Franclin{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        padding: 3em 3em;
+        gap: 3em;
+    }
+    .Franclin_inco{
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+    }
+    .inco:not(:first-child){
+        margin-left: 3em;
+    }
+    .inco{
+        width: 500px ;
+        height: 400px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 2em;
+        padding: 3em 2em;
+        gap: 2em;
+    } 
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1.4em;
+        padding: 4em 1em;
+        gap: 4em;
+    }
+
+    .footer_content{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        padding: 8em 5em;
+        gap: 2em;
+        font-size: 1.2em;
+    }
+    .input{
+        height: 3em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 1200px){
+    nav{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        padding: 1em 1em;
+        background-color: rgb(244, 244, 244);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav_link{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1.2em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.6em;
+        gap: 2em;
+    }
+    .logo{
+        font-size: 1.5em;
+    }
+    .header_cont{
+        display: flex;
+        width: 100%;
+        height: 110vh;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 4em 12em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1em;
+        padding: 5em 3em;
+        gap: 1em;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1.5em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Franclin{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        padding: 1em 1em;
+        gap: 2em;
+    }
+    .Franclin_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5em;
+        gap: 1em;
+        padding: 1em 8em;
+    }
+    .Franclin_inco{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+    .inco:not(:first-child){
+        margin-left: 3em;
+    }
+    .inco{
+        width: 100% ;
+        height: 200px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1.5em;
+        padding: 3em 2em;
+        gap: 2em;
+    } 
+}
+
+@media screen and (max-width: 1025px){
+    .nav_link{
         display: none;
     }
-    .linkses{
-        display: block;
-    }
-    .hidden_btn{
+    .nav_link_media{
         display: flex;
-        background-color: rgba(230, 221, 234, 0.555);
-        padding: 1em 2em;
-        border-color:transparent ;
-        color: #030303;
-    }
-}
-@media screen and (max-width: 590px){
-    nav{
-        display: grid;
-        width: 100%;
-        height: max-content;
-        grid-template-columns: repeat(2, 2fr);
+        gap: 2em;
         align-items: center;
-        padding: 0em 0em;
-        position: fixed;
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .header_cont{
-        display: grid;
+        display: flex;
+        width: 100%;
+        height: 110vh;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 4em 6em;
+    }
+    .header_title{
+        display: flex;
         width: 100%;
         height: 100%;
-        justify-content: end;
-        padding: 20em 0em 10em 6em;
-        font-size: 0.7em;
-        color: cornflowerblue;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.4em;
+        gap: 2em;
     }
-    .daily{
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
+    .We_work{
+        display: flex;
         width: 100%;
         height: max-content;
-        margin: 0 auto;
+        flex-direction: column;
+        font-size: 0.8em;
+        padding: 5em 3em;
+        gap: 1em;
     }
-    .plays{
-        width: 8em;
-        height: 5em;
-        border-radius: 100%;
-        background-color: black;;
+    .we_work_cont_sec{
+        display: flex;
+        gap: 2em;
+        padding: 0em 30em 0em 0em;
     }
-    .we_are_cont{
+    .we_work_cont{
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        height: 100%;
-        font-size:0.7em;
-        padding: 2em 0em;
+        height: max-content;
+        font-size: 1.3em;
+        gap: 3em;
     }
-    .INSPIRATIONAL_TESTIMONY{
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1.2em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Design{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        padding: 0em 5em;
+        background-color: blanchedalmond;
+    }
+    .Design_img{
+        display: flex;
+        width:100%;
+        height: 700px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/about1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Franclin_cont{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         text-align: center;
-        padding: 0em 5em 0em 5em;
-        font-size: 0.6em;
-        gap: 2em;
-        margin-top: -30em;
+        font-size: 1em;
+        gap: 1em;
+        padding: 1em 8em;
     }
-    .inst_media{
-        display:grid;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(1, 1fr);
-        width:100%;
-        height: 2000px;
-        gap: 20em ;
-        margin-top: -40em;
+    .inco{
+        width: 100% ;
+        height: 100px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Personalized{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: max-content;
+        background-color: blanchedalmond;
+    }
+    .Personalized_img{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/visit_bg.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1.5em;
+        padding: 3em 6em;
+        gap: 2em;
+    } 
+    .Interior_cont{
+        display: flex;
+        flex-direction: column;
+        padding: 0em 10em 0em 0em;
     }
     .footer_content{
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: column ;
         width: 100%;
         height: max-content;
-        padding: 10rem 9rem;
-        gap: 3rem;
-        margin: 0 auto;
-        margin-top: 20em;
-        font-size: 0.7em;
+        padding: 8em 5em;
+        gap: 2em;
+        font-size: 1.2em;
+    }
+    .input{
+        height: 3em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 650px){
+    nav{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        padding: 1em 1em;
+        background-color: rgb(244, 244, 244);
+        justify-content: end;
+        align-items: center;
+    }
+    .logo{
+        display: none;
+    }
+    .btn{
+        width: 6em;
+        height: 3em;
+        display: flex;
+        background-color: rgb(255, 230, 0);
+        border-color:transparent ;
+        color: #151111;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        z-index: 60;
+        border-radius: 55px;
+    }
+    .nav_link_media{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1em;
+    }
+    .header_cont{
+        display: flex;
+        width: 100%;
+        height: 110vh;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 0em 5em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1em;
+        gap: 2em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 0.5em;
+        padding: 5em 3em;
+        gap: 1em;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1em;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+    .Design_img{
+        display: flex;
+        width:100%;
+        height: 500px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/about1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Franclin_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.8em;
+        gap: 1em;
+        padding: 1em 5em;
+    }
+    .inco{
+        width: 100% ;
+        height:20px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Personalized_img{
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/visit_bg.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 1em;
+        padding: 3em 1em;
+        gap: 2em;
+    } 
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 1em;
+        padding: 4em 1em;
+        gap: 4em;
+    }
+    .Interior_cont{
+        display: flex;
+        flex-direction: column;
+        padding: 0em 7em 0em 0em;
+        font-size: 0.5em;
+    }
+    .footer_content{
+        display: flex;
+        flex-direction: column ;
+        width: 100%;
+        height: max-content;
+        padding: 4em 5em;
+        gap: 2em;
+        font-size: 1em;
+    }
+    .input{
+        height: 3em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 400px){
+    .nav_link_media{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 0.6em;
+    }
+    .header_cont{
+        display: flex;
+        width: 100%;
+        height: 110vh;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/hero/h1_hero.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 0em 2em;
+    }
+    .header_title{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.5em;
+        gap: 2em;
+    }
+    .We_work{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 0.3em;
+        padding: 5em 3em;
+        gap: 1em;
+    }
+    .Design{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        padding: 0em 1em;
+        background-color: blanchedalmond;
+    }
+    .Design_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 0.5em;
+        padding: 2em 1em;
+        gap: 2em;
+    }
+    .Design_img{
+        display: flex;
+        width:100%;
+        height: 200px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/about1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Franclin_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.4em;
+        gap: 1em;
+        padding: 1em 4em;
+    }
+    .Personalized_img{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/visit_bg.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Personalized_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        font-size: 0.5em;
+        padding: 3em 2em;
+        gap: 2em;
+    } 
+    .Interior{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        font-size: 0.5em;
+        padding: 4em 1em;
+        gap: 4em;
+    }
+    .footer_content{
+        display: flex;
+        flex-direction: column ;
+        width: 100%;
+        height: max-content;
+        padding: 4em 2em;
+        gap: 2em;
+        font-size: 0.5em;
     }
 }
