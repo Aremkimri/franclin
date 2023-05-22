@@ -150,8 +150,11 @@ main{
 }
 
 .we_work_cont_sec{
+    width: 100%;
+    height: max-content;
     display: flex;
     gap: 2em;
+    font-size: 1em;
 }
 .btn_we{
     width: 10em;
@@ -342,7 +345,7 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 3em;
+        font-size: 2em;
         gap: 2em;
     }
     .We_work{
@@ -813,6 +816,7 @@ footer{
         font-size: 1.3em;
         gap: 3em;
     }
+    
     .Design_cont{
         display: flex;
         flex-direction: column;
@@ -882,6 +886,7 @@ footer{
         padding: 3em 6em;
         gap: 2em;
     } 
+    
     .Interior_cont{
         display: flex;
         flex-direction: column;
@@ -943,7 +948,7 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding: 0em 5em;
+        padding: 0em 8em;
     }
     .header_title{
         display: flex;
@@ -953,7 +958,7 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 1em;
+        font-size: 1.1em;
         gap: 2em;
     }
     .We_work{
@@ -961,9 +966,19 @@ footer{
         width: 100%;
         height: max-content;
         flex-direction: column;
-        font-size: 0.5em;
-        padding: 5em 3em;
+        font-size: 1em;
+        padding: 5em 6em;
         gap: 1em;
+    }
+    .we_work_cont_logo{
+        padding: 0em 4em 0em 0em;
+    }
+    .we_work_cont_sec{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        gap: 2em;
+        font-size: 0.6em;
     }
     .Design_cont{
         display: flex;
@@ -989,17 +1004,20 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 0.8em;
+        font-size: 1em;
         gap: 1em;
-        padding: 1em 5em;
+        padding: 1em 3em;
     }
     .inco{
         width: 100% ;
-        height:20px;
+        height:100px;
         background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+    }
+    .inco:not(:first-child){
+        margin-left: 2em;
     }
     .Personalized_img{
         display: flex;
@@ -1025,14 +1043,14 @@ footer{
         height: max-content;
         flex-direction: column;
         font-size: 1em;
-        padding: 4em 1em;
+        padding: 4em 5em;
         gap: 4em;
     }
     .Interior_cont{
         display: flex;
         flex-direction: column;
         padding: 0em 7em 0em 0em;
-        font-size: 0.5em;
+        font-size: 1em;
     }
     .footer_content{
         display: flex;
@@ -1049,7 +1067,7 @@ footer{
         font-size: 1em;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .nav_link_media{
         display: flex;
         gap: 2em;
@@ -1064,7 +1082,7 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding: 0em 2em;
+        padding: 0em 4em;
     }
     .header_title{
         display: flex;
@@ -1074,7 +1092,7 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 0.5em;
+        font-size: 1em;
         gap: 2em;
     }
     .We_work{
@@ -1082,16 +1100,20 @@ footer{
         width: 100%;
         height: max-content;
         flex-direction: column;
-        font-size: 0.3em;
-        padding: 5em 3em;
+        font-size: 0.9em;
+        padding: 5em 2em;
         gap: 1em;
+    }
+    .we_work_cont_logo{
+        padding: 0em 5em 0em 0em;
+        font-size: 0.7em;
     }
     .Design{
         display: flex;
         flex-direction: column;
         width: 100%;
         height: max-content;
-        padding: 0em 1em;
+        padding: 0em 2em;
         background-color: blanchedalmond;
     }
     .Design_cont{
@@ -1099,14 +1121,14 @@ footer{
         flex-direction: column;
         width: 100%;
         height: max-content;
-        font-size: 0.5em;
+        font-size: 0.9em;
         padding: 2em 1em;
         gap: 2em;
     }
     .Design_img{
         display: flex;
         width:100%;
-        height: 200px;
+        height: 300px;
         background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/about1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -1118,14 +1140,25 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 0.4em;
+        font-size: 0.8em;
         gap: 1em;
         padding: 1em 4em;
+    }
+    .inco{
+        width: 100% ;
+        height: 50px;
+        background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/brand3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .inco:not(:first-child){
+        margin-left: 0em;
     }
     .Personalized_img{
         display: flex;
         width: 100%;
-        height: 200px;
+        height: 300px;
         background: url(https://preview.colorlib.com/theme/franclin/assets/img/gallery/visit_bg.jpg.webp);
         background-repeat: no-repeat;
         background-size: cover;
@@ -1137,7 +1170,7 @@ footer{
         width: 100%;
         height: max-content;
         font-size: 0.5em;
-        padding: 3em 2em;
+        padding: 3em 1em;
         gap: 2em;
     } 
     .Interior{
@@ -1145,8 +1178,8 @@ footer{
         width: 100%;
         height: max-content;
         flex-direction: column;
-        font-size: 0.5em;
-        padding: 4em 1em;
+        font-size: 0.6em;
+        padding: 4em 3em;
         gap: 4em;
     }
     .footer_content{
